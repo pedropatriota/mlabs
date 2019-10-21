@@ -8,3 +8,4 @@ Esta escolha ocorreu para mostrar que sem o auxilio de frameworks é possível c
 
 Para rodar o projeto no Browser, basta abrir o aquivo index.html.
 
+Obs: Como não foi possível finalizar totalmente o desafio, algumas informações no momento de selecionar a conta estão contidas no console.log().
