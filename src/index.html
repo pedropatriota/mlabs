@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />    
+    
+    <title>dasboard</title>
+  </head>
+  <body>
+
+<!--HEADER-->
+    <header>
+    <!--HEADER-USER-->
+      <div class="headerUser">
+        <div class="time"></div>
+        <div>
+          <a href="#"
+            ><span>MINHA CONTA</span><i class="fas fa-angle-down"></i
+          ></a>
+        </div>
+        <div><i class="fas fa-cog"></i></div>
+      </div>
+    <!--/HEADER-USER-->
+    
+    <!--NAV[HEADER-MAIN, HEADER-MAIN2]-->
+      <nav>
+        <!--NAV[HEADER-MAIN]-->
+        <div class="headerMain">
+          <img src="./img/logo.png" alt="logo_mlabs" />
+        </div>
+        <!--NAV[/HEADER-MAIN]-->
+
+        <!--NAV[HEADER-MAIN2]-->
+        <div class="headerMain2">
+          <div><a href="#">
+            <img
+              src="https://front.mlabs.com.br/assets/images/menu-icons/dashboard.svg"
+              alt="dasboard"
+            />
+            <p>DASHBOARD</p></a> 
+          </div>
+          <div><a href="#">
+            <img
+              src="https://front.mlabs.com.br/assets/images/menu-icons/agendamento.svg"
+              alt="agendamento"
+            />
+            <p>AGENDAR POST</p></a>
+          </div>
+          <div><a href="#">
+            <img
+              src="https://front.mlabs.com.br/assets/images/menu-icons/calendario.svg"
+              alt="calendario"
+            />
+            <p>CALENDÁRIO</p></a>
+          </div>
+          <div><a href="#">
+            <img
+              src="https://front.mlabs.com.br/assets/images/menu-icons/inbox.svg"
+              alt="inbox"
+            /><P>INBOX</P></a>
+          </div>
+          <div><a href="#">
+            <i class="far fa-newspaper"></i>
+            <p>FEED</p></a>
+          </div>
+          <div><a href="#">
+            <img
+              src="https://front.mlabs.com.br/assets/images/menu-icons/conteudo.svg"
+              alt="conteudo"
+            />
+            <p>WORKFLOW</p></a>
+          </div>
+          <div><a href="#">
+            <img
+              src="https://front.mlabs.com.br/assets/images/menu-icons/acompanhamento.svg"
+              alt="acompanhamento"
+            />
+            <p>ACOMPANHAMENTO</p></a>
+          </div>
+          <div>
+              <a href="#">
+            <img
+              src="https://front.mlabs.com.br/assets/images/menu-icons/relatorios.svg"
+              alt="relatorios"
+            />
+            <p>RELATÓRIOS</p>
+          </a>
+            </div>
+          </div>
+        </div>
+        <!--NAV[/HEADER-MAIN2]-->
+      </nav>
+      <!--/NAV-->
+    </header>
+    <!--/HEADER-->
+
+    <main>
+      <div class="socialMedias">
+        <div>
+          <div><img src="./img/facebook.png" alt="facebook" /><i class="far fa-question-circle"></i></div>
+          <h3>FACEBOOK</h3>
+          <button id="facebook" class="login">
+            adicionar
+          </button>
+        </div>
+        <div>
+          <div><img src="./img/twitter.png" alt="twitter" /><i class="far fa-question-circle"></i></div>
+          <h3>TWITTER</h3>
+        <button id="twitter" class="login">
+            Adicionar
+          </button>
+        </div>
+        <div>
+          <div><img src="./img/instagram.png" alt="instagram" /><i class="far fa-question-circle"></i></div>
+          <h3>INSTAGRAM</h3>
+        <button id="instgram" class="login">
+            Adicionar
+          </button>
+        </div>
+        <div>
+          <div><img src="./img/business.png" alt="google_meu_negocio" /><i class="far fa-question-circle"></i></div>
+          <h3>GOOGLE MEU NEGÓCIO</h3>
+        <button id="google_meu_negocio" class="login">
+            Adicionar
+          </button>
+        </div>
+        <div>
+          <div><img src="./img/pinterest.png" alt="pinterest" /><i class="far fa-question-circle"></i></div>
+          <h3>PINTEREST</h3>
+        <button id="pinterest" class="login">
+            Adicionar
+          </button>
+        </div>
+        <div>
+          <div><img src="./img/linkedin.png" alt="linkedin" /><i class="far fa-question-circle"></i></div>
+          <h3>LINKEDIN</h3>
+          <button id="linkedin" class="login">
+            Adicionar
+          </button>
+        </div>
+        <div>
+          <div><img src="./img/youtube.png" alt="youtube" /><i class="far fa-question-circle"></i></div>
+          <h3>YOUTUBE</h3>
+          <button id="youtube" class="login">
+            Adicionar
+          </button>
+        </div>
+        <div>
+          <div><img src="./img/whatsapp.png" alt="whatsApp" /><i class="far fa-question-circle"></i></div>
+          <h3>  WHATSAPP</h3>
+          <button id="whatsapp" class="login">
+            Adicionar
+          </button>
+        </div>
+        <div>
+          <div><img src="./img/analytics.png" alt="analytics" /><i class="far fa-question-circle"></i></div>
+          <h3>GOOGLE ANALYTICS</h3>
+          <button id="google_analytics"class="login">
+            Adicionar
+          </button>
+        </div>
+      </div>
+    </main>
+
+           
+    <!--Modal -->
+    <div id="myModal" class="modal">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+           
+            <div class="content">
+                <img src="" alt="logo"/><h3></h3>
+            </div>
+            <!--API-->
+            <form id="social_form" method="GET"> 
+                <div class="social">
+                    <ul></ul>                    
+                </div>
+                <div class="info">
+                    <p>Não encontrou sua página/conta</p>
+                    <a href="#">Clique aqui para atualizar suas permissões</a>
+                </div>
+                <div class="submit"><a href="#">VOLTAR</a> <button type="submit">PRÓXIMO <i class="fas fa-long-arrow-alt-right"></i></button></div>                
+            </form>
+        </div>    
+    </div>
+
+    <script src="main.js"></script>    
+    <script src="popup.js"></script>
+    <script src="modal.js"></script>
+    <script src="api.js"></script>
+    </body>
+</html>

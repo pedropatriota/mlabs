@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: prime;
+  src: url(./font/Prime.ttf);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  height: 100%;
+  max-width: 1920px;
+  background-color: #f7f7f7;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 18%;
+  border-bottom: 1px solid #d2d3d3;
+}
+
+header .headerUser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4% 0 4%;
+  height: 50px;
+  background-color: #3a3a3a;
+  color: #cccdce;
+  font-size: 16px;
+}
+
+header .headerUser div:nth-child(2) a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #cccdce;
+}
+
+header .headerUser div:nth-child(2) a span {
+  padding-right: 1%;
+}
+
+header .headerUser div i {
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  background-color: #fff;
+  height: 15%;
+  text-align: center;
+}
+
+header nav .headerMain > img {
+  width: 160px;
+  height: 65px;
+}
+
+nav .headerMain2 div {
+  cursor: pointer;
+}
+
+nav .headerMain2 {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 1%;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-height: 130px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #535353;
+}
+
+header nav .headerMain2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  height: 130px;
+  text-decoration: none;
+  color: #535353;
+}
+
+header nav .headerMain2 div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-decoration: none;
+  color: #535353;
+}
+
+header nav .headerMain2 div:nth-child(3) img {
+  margin-bottom: 5px;
+}
+
+header nav .headerMain2 div i {
+  font-size: 34px;
+  color: #8f8f8f;
+}
+
+header nav .headerMain2 div p {
+  font-family: "prime";
+}
+
+nav .headerMain2 div a:focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cccdce;
+  color: #de2e4d;
+  width: 100%;
+  height: 130px;
+}
+
+header .headerMain2 div:hover {
+  background-color: #cccdce;
+  color: #de2e4d;
+}
+
+header .headerMain2 div:hover a {
+  color: #de2e4d;
+}
+
+header .headerMain2 div a i:hover {
+  background-color: #cccdce;
+  color: #8f8f8f;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 5%;
+}
+
+main .socialMedias {
+  margin: 0 auto 50px auto;
+  width: 90%;
+  height: 540px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+main .socialMedias div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+  height: 50%;
+  border: 2px dashed #cccdce;
+  background-color: #f0f0f0;
+}
+main .socialMedias div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  border: none;
+}
+main .socialMedias div div img {
+  max-width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+main .socialMedias .fa-question-circle {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #8f8f8f;
+  max-width: 100%;
+  height: auto;
+}
+
+main .socialMedias div h3 {
+  font-family: "prime";
+  font-size: 20px;
+  color: #535353;
+  text-align: center;
+}
+
+main .socialMedias div > button {
+  background-color: #de2e4d;
+  width: 99px;
+  height: 32px;
+  margin: 0 auto;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+main .socialMedias div > button:hover {
+  background-color: #e94966;
+}
+
+/*Media Queries*/
+
+@media (max-width: 480px) {
+  .headerMain div img {
+    max-width: 100%;
+    height: auto;
+  }
+  .fa-question-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  main .socialMedias div button {
+    max-width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  main .socialMedias div h3 {
+    display: none;
+  }
+}
+@media (max-width: 730px) {
+  header {
+    width: 100%;
+    border: 0;
+  }
+  nav {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #d2d3d3;
+  }
+  header nav .headerMain2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    height: 50px;
+  }
+  main .socialMedias div button {
+    max-width: 100%;
+    height: auto;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 916px) {
+  nav {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #d2d3d3;
+  }
+
+  .headerMain2 div img,
+  .headerMain2 div i {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 980px) {
+  .headerMain2 div p {
+    font-size: 0.54rem;
+  }
+  .headerMain2 div p {
+    display: none;
+  }
+}
+@media (max-width: 1040px) {
+  .headerMain2 div p {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 1100px) {
+  .headerMain2 div p {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 1200px) {
+  .headerMain2 div p {
+    font-size: 0.7rem;
+  }
+}
+
+/*MODAL STYLE*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 50%;
+  min-width: 30%;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  margin: 10px;
+}
+.content img {
+  width: 50px;
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.close {
+  position: absolute;
+  color: #999;
+  right: 5px;
+  top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form .social {
+  background-color: #efefef;
+  margin: 0 auto;
+  width: 90%;
+  height: 200px;
+  padding: 0 5px;
+  overflow-y: auto;
+}
+form .social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+form .social ul li img {
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+form .social ul li strong {
+  font-size: 18px;
+}
+
+form .social ul li a {
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+form .social ul li div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+form .social ul li input[name="sm"] {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+}
+
+form .social ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  clear: both;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+form .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 130px;
+  text-decoration: none;
+}
+
+form .info a {
+  color: #4a8fe2;
+}
+form .info p {
+  color: #999;
+}
+
+form .submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #efefef;
+  width: 100%;
+  height: 90px;
+  padding: 0 30px;
+}
+
+form .submit a {
+  text-decoration: none;
+  color: #999;
+}
+
+form .submit button {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: #4a8fe2;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form .submit button:hover {
+  background-color: #3786e6;
+}
+
+.selected {
+  background-color: blue;
+}
+
+main.socialMedias div:nth-child(1) {
+  border: 1px solid black;
+}
